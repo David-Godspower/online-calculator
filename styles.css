@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    background-color: blue;
+}
+
+
+.display{
+    height:67px;
+    width:350px;
+    background-color: white;
+    color:black;
+    font-size: 2rem;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+    grid-column: span 4;
+    border-radius: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+button{
+    height:60px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin:5px;
+    cursor: pointer;
+    border:none;
+
+}
+
+/* Number*/
+button.number{
+    background-color: purple;
+    color:white;
+    transition: background-color 0.2s;
+}
+button.number:hover{
+    background-color: violet;
+}
+
+button.operator, .power,.percent{
+    background-color: orange;
+    color:white;
+    transition: background-color 0.2s;
+}
+button.operator:hover, .power:hover, .percent:hover {
+    background-color: gold;
+}
+
+/* Equal */
+button.equal{
+    background:green;
+    color: white;
+    transition: background-color 0.2s;
+}
+button.equal:hover{
+    background-color: lightgreen;
+}
+
+/* Clear CE button*/
+button.clear{
+    background-color: black;
+    color:white;
+    transition: background-color 0.2s;
+}
+button.clear:hover{
+    background-color: red;
+}
+
+/* Clear C button*/
+button.clearr{
+    background-color: orangered;
+    color:white;
+    transition: background-color 0.2s;
+}
+button.clearr:hover{
+    background-color: red;
+}
+
+/* Dot button*/
+button.dot{
+    background-color: gray;
+    color:white;
+    transition: background-color 0.2s;
+}
+button.dot:hover{
+    background-color: lightgray;
+}
+/* End of styles.css */
